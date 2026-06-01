@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+  </g>
+
+  <!-- Left cyan accent bar -->
+  <rect x="0" y="0" width="5" height="630" fill="#00d4ff" opacity="0.8"/>
+
+  <!-- Top cyan glow sweep -->
+  <rect x="0" y="0" width="700" height="3" fill="#00d4ff" opacity="0.6"/>
+
+  <!-- Bottom amber glow sweep -->
+  <rect x="500" y="627" width="700" height="3" fill="#f59e0b" opacity="0.5"/>
+
+  <!-- Decorative circuit-line top right -->
+  <g stroke="#00d4ff" stroke-width="1.5" fill="none" opacity="0.2">
+    <polyline points="900,0 900,40 950,40 950,80 1100,80"/>
+    <circle cx="950" cy="40" r="4" fill="#00d4ff"/>
+    <polyline points="1000,0 1000,25 1050,25 1050,60 1150,60"/>
+    <circle cx="1050" cy="25" r="3" fill="#00d4ff"/>
+    <polyline points="1100,0 1100,15 1150,15 1150,45"/>
+  </g>
+
+  <!-- Decorative circuit-line bottom left -->
+  <g stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.15">
+    <polyline points="200,630 200,590 150,590 150,550 50,550"/>
+    <circle cx="150" cy="590" r="4" fill="#f59e0b"/>
+    <polyline points="300,630 300,605 250,605 250,570 100,570"/>
+  </g>
+
+  <!-- A+ Badge (large, left side) -->
+  <rect x="70" y="185" width="130" height="130" rx="16" fill="#00d4ff" opacity="0.08"/>
+  <rect x="70" y="185" width="130" height="130" rx="16" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <text x="135" y="268" font-family="'Courier New', monospace" font-size="62" font-weight="700"
+        fill="#00d4ff" text-anchor="middle" filter="url(#glow)">A+</text>
+
+  <!-- Main Title -->
+  <text x="235" y="248" font-family="'Courier New', monospace" font-size="54" font-weight="700"
+        fill="#f0f4f8" letter-spacing="-1">CompTIA A+</text>
+  <text x="235" y="298" font-family="'Courier New', monospace" font-size="26" font-weight="400"
+        fill="#00d4ff" letter-spacing="4">STUDY TOOL</text>
+
+  <!-- Subtitle / tagline -->
+  <text x="70" y="360" font-family="Arial, sans-serif" font-size="20" fill="#94a3b8" letter-spacing="0.5">
+    Interactive flashcards · practice quizzes · glossary · cheat sheets · progress tracking
+  </text>
+
+  <!-- Exam badges -->
+  <!-- Core 1 pill -->
+  <rect x="70" y="390" width="160" height="40" rx="8" fill="#00d4ff" opacity="0.12"/>
+  <rect x="70" y="390" width="160" height="40" rx="8" fill="none" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+  <text x="150" y="416" font-family="'Courier New', monospace" font-size="15" font-weight="700"
+        fill="#00d4ff" text-anchor="middle">Core 1 · 220-1201</text>
+
+  <!-- Core 2 pill -->
+  <rect x="248" y="390" width="160" height="40" rx="8" fill="#f59e0b" opacity="0.10"/>
+  <rect x="248" y="390" width="160" height="40" rx="8" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+  <text x="328" y="416" font-family="'Courier New', monospace" font-size="15" font-weight="700"
+        fill="#f59e0b" text-anchor="middle">Core 2 · 220-1202</text>
+
+  <!-- Stat pills row -->
+  <g font-family="'Courier New', monospace" font-size="14">
+    <!-- Flashcards -->
+    <rect x="70" y="450" width="138" height="56" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="139" y="476" fill="#00d4ff" text-anchor="middle" font-size="22" font-weight="700">406</text>
+    <text x="139" y="496" fill="#64748b" text-anchor="middle" font-size="12">Flashcards</text>
+
+    <!-- Quiz Qs -->
+    <rect x="222" y="450" width="138" height="56" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="291" y="476" fill="#00d4ff" text-anchor="middle" font-size="22" font-weight="700">160</text>
+    <text x="291" y="496" fill="#64748b" text-anchor="middle" font-size="12">Quiz Questions</text>
+
+    <!-- Glossary -->
+    <rect x="374" y="450" width="138" height="56" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="443" y="476" fill="#f59e0b" text-anchor="middle" font-size="22" font-weight="700">110+</text>
+    <text x="443" y="496" fill="#64748b" text-anchor="middle" font-size="12">Glossary Terms</text>
+
+    <!-- Cheat Sheets -->
+    <rect x="526" y="450" width="138" height="56" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="595" y="476" fill="#f59e0b" text-anchor="middle" font-size="22" font-weight="700">10</text>
+    <text x="595" y="496" fill="#64748b" text-anchor="middle" font-size="12">Cheat Sheets</text>
+  </g>
+
+  <!-- Right panel — domain bars visual -->
+  <rect x="740" y="130" width="420" height="370" rx="14" fill="#0f1923" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="740" y="130" width="420" height="44" rx="14" fill="#1a2535"/>
+  <rect x="740" y="158" width="420" height="16" fill="#1a2535"/>
+  <circle cx="768" cy="152" r="6" fill="#ef4444" opacity="0.7"/>
+  <circle cx="790" cy="152" r="6" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="812" cy="152" r="6" fill="#22c55e" opacity="0.7"/>
+  <text x="950" y="158" font-family="'Courier New', monospace" font-size="13" fill="#475569"
+        text-anchor="middle">exam domains</text>
+
+  <!-- Domain bars -->
+  <g font-family="Arial, sans-serif" font-size="13">
+    <!-- Core 1 label -->
+    <text x="762" y="204" fill="#00d4ff" font-size="12" font-weight="700" letter-spacing="2">CORE 1</text>
+    <!-- Hardware 27% -->
+    <text x="762" y="226" fill="#94a3b8">Hardware</text>
+    <rect x="860" y="213" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="213" width="175" height="14" rx="3" fill="#00d4ff" opacity="0.7"/>
+    <text x="1048" y="225" fill="#00d4ff" font-size="11">27%</text>
+    <!-- HW Troubleshooting 26% -->
+    <text x="762" y="250" fill="#94a3b8">HW Troubleshooting</text>
+    <rect x="860" y="237" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="237" width="168" height="14" rx="3" fill="#00d4ff" opacity="0.55"/>
+    <text x="1048" y="249" fill="#00d4ff" font-size="11">26%</text>
+    <!-- Networking 20% -->
+    <text x="762" y="274" fill="#94a3b8">Networking</text>
+    <rect x="860" y="261" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="261" width="130" height="14" rx="3" fill="#00d4ff" opacity="0.45"/>
+    <text x="1048" y="273" fill="#00d4ff" font-size="11">20%</text>
+    <!-- Mobile 15% -->
+    <text x="762" y="298" fill="#94a3b8">Mobile Devices</text>
+    <rect x="860" y="285" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="285" width="97" height="14" rx="3" fill="#00d4ff" opacity="0.35"/>
+    <text x="1048" y="297" fill="#00d4ff" font-size="11">15%</text>
+
+    <!-- Divider -->
+    <line x1="762" y1="313" x2="1140" y2="313" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Core 2 label -->
+    <text x="762" y="332" fill="#f59e0b" font-size="12" font-weight="700" letter-spacing="2">CORE 2</text>
+    <!-- OS 31% -->
+    <text x="762" y="354" fill="#94a3b8">Operating Systems</text>
+    <rect x="860" y="341" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="341" width="200" height="14" rx="3" fill="#f59e0b" opacity="0.65"/>
+    <text x="1048" y="353" fill="#f59e0b" font-size="11">31%</text>
+    <!-- Security 25% -->
+    <text x="762" y="378" fill="#94a3b8">Security</text>
+    <rect x="860" y="365" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="365" width="161" height="14" rx="3" fill="#f59e0b" opacity="0.5"/>
+    <text x="1048" y="377" fill="#f59e0b" font-size="11">25%</text>
+    <!-- SW Troubleshooting 22% -->
+    <text x="762" y="402" fill="#94a3b8">SW Troubleshooting</text>
+    <rect x="860" y="389" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="389" width="142" height="14" rx="3" fill="#f59e0b" opacity="0.4"/>
+    <text x="1048" y="401" fill="#f59e0b" font-size="11">22%</text>
+    <!-- Operational 22% -->
+    <text x="762" y="426" fill="#94a3b8">Operational Proc.</text>
+    <rect x="860" y="413" width="258" height="14" rx="3" fill="#1e293b"/>
+    <rect x="860" y="413" width="142" height="14" rx="3" fill="#f59e0b" opacity="0.4"/>
+    <text x="1048" y="425" fill="#f59e0b" font-size="11">22%</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="578" font-family="'Courier New', monospace" font-size="16" fill="#334155"
+        text-anchor="middle" letter-spacing="3">FREE · OFFLINE-CAPABLE · NO SIGNUP REQUIRED</text>
+
+  <!-- Bottom border accent -->
+  <rect x="0" y="625" width="1200" height="5" fill="url(#amberGlow)" opacity="0.8"/>
+</svg>
